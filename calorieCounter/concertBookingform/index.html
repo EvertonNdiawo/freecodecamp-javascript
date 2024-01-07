@@ -1,0 +1,41 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Book us!</title>
+    </head>
+
+    <body>
+        <main>
+            <h1>Allow us grace your event</h1>
+            <div id="mainBook">
+                <form id="book">
+                    <label for="booksel">Nature of event : </label>
+                    <select id="booksel" name="concertOptions">
+                        <option value="hangout">Hangout (chill) music</option>
+                        <option value="ceremony">Wedding Ceremony</option>
+                        <option value="stage">Stage performance</option>
+                        <option value="reception">Wedding reception</option>
+                        <option value="corporate" selected>Corporate</option>
+                        <option value="memorial">Memorial</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <fieldset>
+                        <legend>Selected Event</legend>
+                        <div class="output"></div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Optional Additions</legend>
+                        <div class="output">
+                            
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

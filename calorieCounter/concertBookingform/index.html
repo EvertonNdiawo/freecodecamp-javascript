@@ -1,41 +1,87 @@
-<!DOCTYPE html5>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="styles.css"/>
         <title>Book us!</title>
     </head>
 
     <body>
         <main>
-            <h1>Allow us grace your event</h1>
+            <h1>Book us for your event</h1>
             <div id="mainBook">
                 <form id="book">
-                    <label for="booksel">Nature of event : </label>
-                    <select id="booksel" name="concertOptions">
-                        <option value="hangout">Hangout (chill) music</option>
-                        <option value="ceremony">Wedding Ceremony</option>
-                        <option value="stage">Stage performance</option>
-                        <option value="reception">Wedding reception</option>
-                        <option value="corporate" selected>Corporate</option>
-                        <option value="memorial">Memorial</option>
-                        <option value="other">Other</option>
-                    </select>
+                    <label for="booksel">Nature of event : 
+                        <select id="booksel" name="concertOptions">
+                           <option value="ceremony">Wedding - down the isle</option>
+                           <option value="default" selected>Select an option here</option>
+                           <option value="hangout">Hangout (chill) music</option>
+                           <option value="stage">Stage performance</option>
+                           <option value="reception">Wedding reception</option>
+                           <option value="corporate">Corporate</option>
+                           <option value="memorial">Memorial</option>
+                           <option value="other">Other</option>
+                        </select>
+                    </label>    
+
 
                     <fieldset>
                         <legend>Selected Event</legend>
-                        <div class="output"></div>
+                        <div id="input">
+                            <p>Please select an event above</p>                        
+                        </div>
                     </fieldset>
 
                     <fieldset>
                         <legend>Optional Additions</legend>
-                        <div class="output">
-                            
+                        <div class="addition">
+                            <label>Special song request
+                                <input type="checkbox" id="song" value="addSong"/>
+                                <span></span>
+                            </label>
+                            <label>Request for a rehearsal before day of event
+                                <input type="checkbox" id="rehearsals" value="rehearsals"/>
+                                <span></span>
+                            </label>
+                            <label>Collaboration of quartet with other booked performers
+                                <input type="checkbox" id="collaboration" value="collaboration"/>
+                                <span></span>
+                            </label>
                         </div>
                     </fieldset>
+
+                    <fieldset id="labels">
+                        <legend>Contact Details</legend>
+                        <label for="name" value="name">Name: </label>
+                        <input type="text" id="name" placeholder="enter name" required>
+                        <label for="email" value="email">Email: </label>
+                        <input type="email" id="email" placeholder="kamau@somedomain.com">
+                        <label for="phone" value="phone">Phone: </label>
+                        <input type="tel" id="phone" placeholder="07xxxxxxxx" required>
+                    </fieldset>
+
+                    <fieldset class="calculations">
+                        <div id="hide" >
+                            <h1 id="costH">Here's the cost for your booking : </h1>
+
+                            <p class="hidep">
+                                1. Invoice date: 
+                                <span class = "invoice">
+                                    Ksh 0.00
+                                </span>
+                            </p>
+                        </div>
+                        <button type="button" id="calculate">COST</button>
+                        <button type="button" id="clear">CLEAR</button>
+                        <button type="submit" id="submit">SUBMIT</button>
+                    </fieldset>
+                        
+      
                 </form>
             </div>
         </main>
     </body>
+
+    <script src="script.js"></script>
 </html>

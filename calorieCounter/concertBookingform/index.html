@@ -62,16 +62,99 @@
                     </fieldset>
 
                     <fieldset class="calculations">
-                        <div id="hide" >
-                            <h1 id="costH">Here's the cost for your booking : </h1>
+                        <table class="invoice">
+                            <tr class="invoice_info">
+                                <td>
+                                    <h1>INVOICE</h1>
+                                </td>
+                                <td width="100"></td>
+                                <td>
+                                    +254700000000<br>
+                                    Bookings@tafariclarinets.co.ke<br>
+                                    Tafari clarinets Ensemble
+                                </td>
+                                <td>
+                                    Lucky Summer,<br>
+                                    Nairobi, Kenya.<br>
+                                    55, Lucky Summer complex.
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                        <table>
+                            <tr>
+                                <td width="5%"> </td>
+                                <td width ="500">Billed to: </td>
+                                <td width="200">&nbsp;&nbsp;&nbsp; Invoice Number</td>
+                                <td width="200">&nbsp;&nbsp;&nbsp; Invoice Total</td>
+                                <td width="200">&nbsp;&nbsp;&nbsp; </td>
+                            </tr>
+                            <tr>
+                                <td width="5%"> </td>
+                                <td width="500">Client name</td>
+                                <td width="200">&nbsp;&nbsp;&nbsp; 00000</td>
+                                <td width="200">&nbsp;&nbsp;&nbsp; </td>
+                                <td width="200">&nbsp;&nbsp;&nbsp; </td>
+                            </tr>
+                            <tr>
+                                <td width="5%"> </td>
+                                <td width ="500">Email address</td>
+                                <td width="200">&nbsp;&nbsp;&nbsp; </td>
+                                <td width="200">&nbsp;&nbsp;&nbsp; </td>
+                                <td width="200">&nbsp;&nbsp;&nbsp; </td>
+                            </tr>
+                            <tr>
+                                <td width="5%"> </td>
+                                <td width ="500">Phone number</td>
+                                <td width="200">&nbsp;&nbsp;&nbsp; Date of Issue</td>
+                                <td width="200">&nbsp;&nbsp;&nbsp; </td>
+                                <td width="200">&nbsp;&nbsp;&nbsp; </td>
+                            </tr>
+                            <tr>
+                                <td width="5%"> </td>
+                                <td width ="500">Client Address</td>
+                                <td width="200">&nbsp;&nbsp;&nbsp; 01/01/1997</td>
+                                <td width="200">&nbsp;&nbsp;&nbsp; </td>
+                                <td width="200">&nbsp;&nbsp;&nbsp; </td>
+                            </tr>
+                        </table>
+                        <hr/>
+                        <table class="invoice_details">
+                            <thead id="invoice_headers">
+                                <tr>
+                                    <th id="ids">Id</th>
+                                    <th>Product Name</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
-                            <p class="hidep">
-                                1. Invoice date: 
-                                <span class = "invoice">
-                                    Ksh 0.00
-                                </span>
-                            </p>
-                        </div>
+                            </tbody>
+                        </table>
+                        <hr/>
+                        <table>
+                            <tr>
+                                <th width="20%"></th>
+                                <th width="20%"></th>
+                                <th width="20%"></th>
+                                <th width="20%">Subtotal: </th>
+                                <th width="20%" id="subtotal"></th>
+                            </tr>
+                            <tr>
+                                <th width="20%"></th>
+                                <th width="20%"></th>
+                                <th width="20%"></th>
+                                <th width="20%">Discount: </th>
+                                <th width="20%" id="discount">0.00</th>
+                            </tr>
+                            <tr>
+                                <th width="20%"></th>
+                                <th width="20%"></th>
+                                <th width="20%"></th>
+                                <th width="20%">Total Amount(Ksh): </th>
+                                <th width="20%" id="total"></th>
+                            </tr>
+                        </table>
                         <button type="button" id="calculate">COST</button>
                         <button type="button" id="clear">CLEAR</button>
                         <button type="submit" id="submit">SUBMIT</button>

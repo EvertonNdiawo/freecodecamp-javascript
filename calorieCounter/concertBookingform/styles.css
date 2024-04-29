@@ -206,36 +206,38 @@ button:hover{
 
 .calculations{
     border: none;
+    background-color: #000;
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 
-#hide{
-    /*display: none;*/
-    background-color:#f00;
-    width: 80%;
-    min-height: 200px;
-    margin: 0 10%;
-    padding: 10px;
+.calculations td, th{
+    background-color: beige;
 }
-
-.hide h1{
-    font-size: 16px;
+#invoice_headers{
+    background-color:#9b51e0;
+    color: #fff;
 }
-
-.hidep{
-    display: inline-block;
-    position: absolute;
+.calculations table{
+    width:90%;
+    margin: 0 5%;
+    border-collapse: collapse;
+    border: none;
 }
-
+.calculations hr{
+    width: 90%;
+    margin: 0 5%;
+}
 .invoice{
-    position: relative;
-    display: flex;
-    width: 100%;
-    min-height: 30px;
-    text-align:center;
-    padding: 2px;
-    background-color: #fff;
+    /*display: none;*/
+    width: 90%;
+    min-height: 100px;
+    margin: 0 5%;
+    padding: 5px;
 }
 
-.invoice p{
-    position: absolute;
+.invoice_info{
+    width: 100%;
+    background-color: #9b51e0;
+    color: #fff;
 }

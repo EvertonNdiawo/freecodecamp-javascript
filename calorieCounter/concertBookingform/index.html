@@ -56,38 +56,37 @@
                         <label for="name" value="name">Name: </label>
                         <input type="text" id="name" placeholder="enter name" required>
                         <label for="email" value="email">Email: </label>
-                        <input type="email" id="email" placeholder="kamau@somedomain.com">
+                        <input type="email" id="email" placeholder="someone@somedomain.com">
                         <label for="phone" value="phone">Phone: </label>
                         <input type="tel" id="phone" placeholder="07xxxxxxxx" required>
                     </fieldset>
 
                     <fieldset class="calculations">
                         <table class="invoice">
-                            <tr class="invoice_info">
+                            <tr>
                                 <td>
                                     <h1>INVOICE</h1>
                                 </td>
                                 <td width="100"></td>
                                 <td>
                                     +254700000000<br>
-                                    Bookings@tafariclarinets.co.ke<br>
-                                    Tafari clarinets Ensemble
+                                    Bookings@somecompany.co.ke<br>
+                                    Some company organization
                                 </td>
                                 <td>
-                                    Lucky Summer,<br>
-                                    Nairobi, Kenya.<br>
-                                    55, Lucky Summer complex.
+                                    Some estate,<br>
+                                    Jabari, Wakanda.<br>
+                                    55, Some estate complex.
                                 </td>
                             </tr>
                         </table>
-                        <br>
-                        <table>
+                        <table class="dets">
                             <tr>
                                 <td width="5%"> </td>
-                                <td width ="500">Billed to: </td>
-                                <td width="200">&nbsp;&nbsp;&nbsp; Invoice Number</td>
-                                <td width="200">&nbsp;&nbsp;&nbsp; Invoice Total</td>
-                                <td width="200">&nbsp;&nbsp;&nbsp; </td>
+                                <td width ="28%">Billed to: </td>
+                                <td width="35%">&nbsp;&nbsp;&nbsp; Invoice Number</td>
+                                <td width="30%">&nbsp;&nbsp;&nbsp; Invoice Total</td>
+                                <td width="5%">&nbsp;&nbsp;&nbsp; </td>
                             </tr>
                             <tr>
                                 <td width="5%"> </td>
@@ -118,11 +117,16 @@
                                 <td width="200">&nbsp;&nbsp;&nbsp; </td>
                             </tr>
                         </table>
-                        <hr/>
-                        <table class="invoice_details">
-                            <thead id="invoice_headers">
+                        <hr class="hr1"/>
+                        <table>
+                            <colgroup>
+                                <col class="col1">
+                                <col class="col2">
+                                <col class="col3">
+                            </colgroup>
+                            <thead>
                                 <tr>
-                                    <th id="ids">Id</th>
+                                    <th id="serials">Sr. No</th>
                                     <th>Product Name</th>
                                     <th>Amount</th>
                                 </tr>
@@ -131,28 +135,28 @@
 
                             </tbody>
                         </table>
-                        <hr/>
-                        <table>
+                        <hr class="hr2"/>
+                        <table id="amounts">
                             <tr>
                                 <th width="20%"></th>
                                 <th width="20%"></th>
-                                <th width="20%"></th>
-                                <th width="20%">Subtotal: </th>
-                                <th width="20%" id="subtotal"></th>
+                                <th width="25%"></th>
+                                <th width="2%">Subtotal: </th>
+                                <th width="33%" id="subtotal">0.00</th>
                             </tr>
                             <tr>
                                 <th width="20%"></th>
                                 <th width="20%"></th>
-                                <th width="20%"></th>
-                                <th width="20%">Discount: </th>
-                                <th width="20%" id="discount">0.00</th>
+                                <th width="25%"></th>
+                                <th width="5%">Discount: </th>
+                                <th width="30%" id="discount">0.00</th>
                             </tr>
                             <tr>
                                 <th width="20%"></th>
                                 <th width="20%"></th>
-                                <th width="20%"></th>
-                                <th width="20%">Total Amount(Ksh): </th>
-                                <th width="20%" id="total"></th>
+                                <th width="30%"></th>
+                                <th width="15%">Total Amount(Ksh): </th>
+                                <th width="%" id="total"></th>
                             </tr>
                         </table>
                         <button type="button" id="calculate">COST</button>

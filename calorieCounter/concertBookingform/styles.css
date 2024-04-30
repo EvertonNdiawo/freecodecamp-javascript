@@ -172,7 +172,7 @@ button:hover{
 }
 
 #calculate{
-    margin-left: 15%;
+    margin-left: 18%;
 }
 #calculate:focus,
 #calculate:active{
@@ -206,38 +206,60 @@ button:hover{
 
 .calculations{
     border: none;
-    background-color: #000;
-    background-size:cover;
-    background-repeat:no-repeat;
+    background-color: #f6f4f8;
 }
 
-.calculations td, th{
-    background-color: beige;
-}
-#invoice_headers{
-    background-color:#9b51e0;
-    color: #fff;
-}
 .calculations table{
     width:90%;
-    margin: 0 5%;
     border-collapse: collapse;
-    border: none;
+    border-right:1px solid #31afe1;
 }
 .calculations hr{
     width: 90%;
-    margin: 0 5%;
 }
-.invoice{
-    /*display: none;*/
+.hr1{
+    margin: 50px 5% 5px 5%;
+}
+.hr2{
+    margin: 10px 5% 0 5%;
+}
+.invoice {
     width: 90%;
-    min-height: 100px;
+    min-height: 120px;
     margin: 0 5%;
     padding: 5px;
+    background-color: #2eaadc;
+    color:#fff;
 }
 
-.invoice_info{
-    width: 100%;
-    background-color: #9b51e0;
-    color: #fff;
+.dets{
+    margin: 0 5%;
+}
+.dets tr:first-child{
+    height: 50px;
+    font-size: 18px;
+    font-weight: 800;
+}
+.dets tr:nth-child(5){
+    height: 30px;
+    padding-top: 0px;
+}
+
+#amounts{
+    margin: 80px 5% 60px 5%;
+    background-color:#31afe1;
+    color:#fff;
+}
+#amounts tr{
+    margin-top: 5px;
+}
+
+col.col1{
+    width:5%;
+}
+col.col2{
+    width:75%;
+}
+col.col3{
+    width:10%;
 }

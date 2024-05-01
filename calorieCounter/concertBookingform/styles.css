@@ -212,7 +212,7 @@ button:hover{
 .calculations table{
     width:90%;
     border-collapse: collapse;
-    border-right:1px solid #31afe1;
+    border:2px solid #31afe1;
 }
 .calculations hr{
     width: 90%;
@@ -247,19 +247,15 @@ button:hover{
 
 #amounts{
     margin: 80px 5% 60px 5%;
-    background-color:#31afe1;
-    color:#fff;
-}
-#amounts tr{
-    margin-top: 5px;
+    border: none;
+    font-weight: 800;
+    font-size: 17px;
 }
 
-col.col1{
-    width:5%;
-}
-col.col2{
-    width:75%;
-}
-col.col3{
-    width:10%;
+#amounts tr:nth-child(4){
+    height: 50px;
+    background-color:#31afe1;
+    color: #fff;
+    font-size: 30px;
+    font-weight:300;
 }

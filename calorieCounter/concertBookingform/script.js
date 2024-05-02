@@ -38,15 +38,27 @@ const concert = document.getElementById('booksel');
     concert.addEventListener('change', addOutput);
 
 
-const hide = document.getElementById('hide');
+
+/*For purposes of adding customer details to the invoice*/
+let custName = document.getElementById('name');
+let custEmail = document.getElementById('email');
+let custPhone = document.getElementById('phone');
+let custAddress = document.getElementById('address');
+let invCustName = document.getElementById('clName');
+let invCustEmail = document.getElementById('clEmail');
+let invCustPhone = document.getElementById('clPhone');
+let invCustAddress = document.getElementById('clAddress');
+
+
+
+/*Specifically adds the details above into the invoice and calculates cost*/
 let calculateButton = document.getElementById('calculate');
    
 function calculateCost(){
-    let costDiv = document.getElementById('hide');
-    let costH = document.getElementById('costH');
-    costDiv.style.display = "block";
-    costH.innerText = `Heres your invoice for the ${concert.value} event: `;
-    costH.style.fontSize = "16px";
+    invCustName.textContent = custName.value;
+    invCustEmail.textContent = custEmail.value;
+    invCustPhone.textContent = custPhone.value;
+    invCustAddress.textContent = custAddress.value;
 }
 
 calculateButton.addEventListener('click', calculateCost);

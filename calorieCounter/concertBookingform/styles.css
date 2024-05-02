@@ -211,8 +211,14 @@ button:hover{
 
 .calculations table{
     width:90%;
+    margin: 0 5%;
     border-collapse: collapse;
     border:2px solid #31afe1;
+}
+.calculations thead{
+    color:#7a786dea;
+    font-size: 16px;
+    font-weight:900;
 }
 .calculations hr{
     width: 90%;

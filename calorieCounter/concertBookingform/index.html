@@ -59,6 +59,8 @@
                         <input type="email" id="email" placeholder="someone@somedomain.com">
                         <label for="phone" value="phone">Phone: </label>
                         <input type="tel" id="phone" placeholder="07xxxxxxxx" required>
+                        <label for="address" value="address">Address: </label>
+                        <input type="address" id="address" placeholder="55, Rue Plummet" required>
                     </fieldset>
 
                     <fieldset class="calculations">
@@ -90,28 +92,28 @@
                             </tr>
                             <tr>
                                 <td width="5%"> </td>
-                                <td width="500">Client name</td>
+                                <td width="500" id="clName">Client name</td>
                                 <td width="200">&nbsp;&nbsp;&nbsp; 00000</td>
                                 <td width="200">&nbsp;&nbsp;&nbsp; </td>
                                 <td width="200">&nbsp;&nbsp;&nbsp; </td>
                             </tr>
                             <tr>
                                 <td width="5%"> </td>
-                                <td width ="500">Email address</td>
+                                <td width ="500" id="clEmail">Email address</td>
                                 <td width="200">&nbsp;&nbsp;&nbsp; </td>
                                 <td width="200">&nbsp;&nbsp;&nbsp; </td>
                                 <td width="200">&nbsp;&nbsp;&nbsp; </td>
                             </tr>
                             <tr>
                                 <td width="5%"> </td>
-                                <td width ="500">Phone number</td>
+                                <td width ="500" id="clPhone">Phone number</td>
                                 <td width="200" style="font-size:18px; font-weight:800;">&nbsp;&nbsp;&nbsp; Date of Issue</td>
                                 <td width="200">&nbsp;&nbsp;&nbsp; </td>
                                 <td width="200">&nbsp;&nbsp;&nbsp; </td>
                             </tr>
                             <tr>
                                 <td width="5%"> </td>
-                                <td width ="500">Client Address</td>
+                                <td width ="500" id="clAddress">Client Address</td>
                                 <td width="200">&nbsp;&nbsp;&nbsp; 01/01/1997</td>
                                 <td width="200">&nbsp;&nbsp;&nbsp; </td>
                                 <td width="200">&nbsp;&nbsp;&nbsp; </td>
@@ -161,6 +163,7 @@
                                 <th width="20%">//////////</th>
                             </tr>
                         </table>
+
                         <button type="button" id="calculate">COST</button>
                         <button type="button" id="clear">CLEAR</button>
                         <button type="submit" id="submit">SUBMIT</button>

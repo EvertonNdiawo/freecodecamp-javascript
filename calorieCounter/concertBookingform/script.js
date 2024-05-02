@@ -40,10 +40,10 @@ const concert = document.getElementById('booksel');
 
 
 /*For purposes of adding customer details to the invoice*/
-let custName = document.getElementById('name');
-let custEmail = document.getElementById('email');
-let custPhone = document.getElementById('phone');
-let custAddress = document.getElementById('address');
+const custName = document.getElementById('name');
+const custEmail = document.getElementById('email');
+const custPhone = document.getElementById('phone');
+const custAddress = document.getElementById('address');
 let invCustName = document.getElementById('clName');
 let invCustEmail = document.getElementById('clEmail');
 let invCustPhone = document.getElementById('clPhone');
@@ -55,10 +55,10 @@ let invCustAddress = document.getElementById('clAddress');
 let calculateButton = document.getElementById('calculate');
    
 function calculateCost(){
-    invCustName.textContent = custName.value;
-    invCustEmail.textContent = custEmail.value;
-    invCustPhone.textContent = custPhone.value;
-    invCustAddress.textContent = custAddress.value;
+    invCustName.textContent = custName.value.trim() !== '' ? custName.value : 'Client Name';
+    invCustEmail.textContent = custEmail.value.trim() !== '' ? custEmail.value : 'Email Address';
+    invCustPhone.textContent = custPhone.value.trim() !== '' ? custPhone.value : 'Phone number';
+    invCustAddress.textContent = custAddress.value.trim() !== '' ? custAddress.value : 'Client Address';
 }
 
 calculateButton.addEventListener('click', calculateCost);
